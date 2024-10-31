@@ -3,7 +3,8 @@ import java.util.Scanner;
 public class Dungeon {
   public static void main(String[] args) {
     Scanner input = new Scanner(System.in);
-
+    
+    int x = 0;
     System.out.println("Welcome to the land of the 'Mysticality Zone.' What used to be a vibrant land of magic is now a desolate wasteland where you will learn how to survive, aswell as finding great treasures. Now then, who were you? (Alchemist, Knight, Scholar, Hunter, Paladin, Seer)");
     String Role = "";
     String StrIn = input.nextLine();
@@ -15,7 +16,7 @@ public class Dungeon {
     else if (StrIn.equals("Seer")) { Role = "Seer"; }
     else { System.out.println("You did not enter your role, closing game."); System.exit(0); }
     Player Player = new Player(Role);
-    System.out.println("Youre role is a " + Role + "." + " Is this correct?");
+    System.out.println("Youre role is a " + Role + ".");
 
 
     
