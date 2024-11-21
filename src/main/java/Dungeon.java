@@ -3,7 +3,8 @@ import java.util.Scanner;
 public class Dungeon {
   public static void main(String[] args) {
     Scanner input = new Scanner(System.in);
-    double tester = (Math.random() * (0.8 - 0.5)) + 0.5;
+    double tester = (int) ((Math.random() * (8 - 5)) + 5);
+    tester /= (double) 10.0;
 
     int x = 0;
     System.out.println(
@@ -45,7 +46,7 @@ public class Dungeon {
       System.out.println(
           "You are Pandemonium, the destroyer. Something has escaped your wrath and fled to paradise. It is time to fix your mistakes");
     }
-    System.out.println(tester);
+    System.out.println("" + tester);
 
     int Close = input.nextInt();
     if (Close == 1) {
