@@ -1,8 +1,10 @@
 public class Entity {
-  private int HP;
-  private int ATK;
-  private int MYS;
-  private int DEF;
-  private int RES;
-  private int CRT;
+  public int HP;
+  public int MP;
+  public int ATK;
+  public int MYS;
+  public int DEF;
+  public int RES;
+  public int ACC;
+  public double CRT;
 }
